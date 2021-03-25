@@ -5,7 +5,7 @@ var app = new Vue (
         images: [
           "https://i.pinimg.com/originals/8c/52/81/8c52811a28dc44c8f7950502131162a5.jpg",
           "https://www.turismo.it/typo3temp/pics/c96fc8b49a.jpg",
-          "https://molisecoast.com/wp-content/uploads/2017/06/trabucchi-termoli-41- 1024x685.jpg"
+          "https://molisecoast.com/wp-content/uploads/2017/06/trabucchi-termoli-41-1024x685.jpg"
         ],
         imageIndex : 0
     },
@@ -13,7 +13,7 @@ var app = new Vue (
       nextImage: function() {
         this.imageIndex++;
 
-        if (this.imageIndex == this.images.lenght) {
+        if (this.imageIndex == this.images.length) {
           this.imageIndex = 0;
         }
       },
@@ -21,7 +21,7 @@ var app = new Vue (
         this.imageIndex--;
 
         if (this.imageIndex < 0) {
-          this.imageIndex = this.images.lenght - 1;
+          this.imageIndex = this.images.length - 1;
         }
       }
     }

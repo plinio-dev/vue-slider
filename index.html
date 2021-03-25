@@ -14,6 +14,9 @@
   <div id="app">
 
     <div class="carousel-wrapper">
+      <div class="titolo">
+        <h1>Termoli la perla del Molise</h1>
+      </div>
       <div class="carousel">
         <div class="carousel-prev">
           <i @click="prevImage" class="fas fa-chevron-left"></i>
@@ -21,7 +24,7 @@
         <div class="carousel-images">
           <img :src="images[imageIndex]" alt="termoli">
           <div class="carousel-bullets">
-            <i v-for="(image,index) in images" :class="imageIndex == index ? 'active' : '' " class="fas fa-circle"></i>
+            <i v-for="(image,index) in images" :class="imageIndex == index ? 'active' : '' " @click="imageIndex = index" class="fas fa-circle"></i>
           </div>
         </div>
         <div class="carousel-next">

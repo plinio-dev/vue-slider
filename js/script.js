@@ -23,7 +23,7 @@ var app = new Vue (
         if (this.imageIndex < 0) {
           this.imageIndex = this.images.length - 1;
         }
-      }
+      },
     }
   }
 );

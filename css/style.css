@@ -4,11 +4,15 @@
   margin: 0;
 }
 .carousel-wrapper {
-  background-color: gray;
-  height: 100vh;
+  background-color: azure;
+  height: 80vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
+}
+.titolo {
+  padding: 50px;
 }
 .carousel {
   display: flex;
@@ -17,7 +21,7 @@
   margin: auto;
   width: 60%;
   height: 500px;
-  /* background-color: orange; */
+
 }
 .carousel-images {
   height: 100%;
@@ -38,7 +42,7 @@ i {
 .carousel-bullets {
   display: flex;
   position: absolute;
-  bottom: 70px;
+  /* bottom: 70px; */
   left: 50%;
   transform: translatex(-50%);
 }

@@ -20,9 +20,12 @@
         </div>
         <div class="carousel-images">
           <img :src="images[imageIndex]" alt="termoli">
+          <div class="carousel-bullets">
+            <i v-for="(image,index) in images" :class="imageIndex == index ? 'active' : '' " class="fas fa-circle"></i>
+          </div>
         </div>
         <div class="carousel-next">
-          <i @click="nextImage" class="fas fa-chevron-right"></i>
+          <i @click="nextImage"  class="fas fa-chevron-right"></i>
         </div>
       </div>
     </div>

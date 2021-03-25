@@ -11,18 +11,18 @@
 </head>
 <body>
 
-  <div id="root">
+  <div id="app">
 
     <div class="carousel-wrapper">
       <div class="carousel">
         <div class="carousel-prev">
-          <i class="fas fa-chevron-left"></i>
+          <i @click="prevImage" class="fas fa-chevron-left"></i>
         </div>
         <div class="carousel-images">
           <img :src="images[imageIndex]" alt="termoli">
         </div>
         <div class="carousel-next">
-          <i class="fas fa-chevron-right"></i>
+          <i @click="nextImage" class="fas fa-chevron-right"></i>
         </div>
       </div>
     </div>
